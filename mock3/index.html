@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Styles/index.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <div id="container"></div>
+  
+  
+</body>
+</html>
+
+<script type="module">
+
+  import navbar from './components/navbar.js';
+  // console.log("navbar:", navbar)
+
+  import {getData, append} from "./Scripts/fetchAppend.js"
+
+  let head = document.getElementById("navbar")
+  head.innerHTML = navbar();
+
+  let parent = document.getElementById("container")
+
+  
+  let response = await getData(`https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products`)
+  // console.log("responese:",response)
+  
+  append(response,parent)
+</script>

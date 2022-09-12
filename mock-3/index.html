@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Mart</title>
+    <link rel="stylesheet" href="./Style/index.css" />
+    <script
+      src="https://kit.fontawesome.com/db2222aba3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Products</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="products.html">Products</a>
+    </nav>
+    <div class="allfilter">      
+      <select name="Filter" id="filter">
+        <option value="">Category</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="kids">Kid</option>
+        <option value="homedecor">Decor</option>
+      </select>
+      <select name="" id="sort">
+        <option value="">Sort</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+      </select>
+      <div>
+        <button class="pre">prev</button>
+        <span class="page">1</span>
+        <button class="next">next</button>
+      </div>
+    </div>
+    <div class="container"></div>
+  </body>
+</html>
+<script src="./Script/index.js"></script>
